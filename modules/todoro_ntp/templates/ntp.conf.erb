@@ -1,0 +1,11 @@
+# NTP configuration managed by Puppet - Todoro22
+#Le goat de l'informatique
+
+driftfile /var/lib/ntp/ntp.drift
+server 0.ubuntu.pool.ntp.org iburst
+server 1.ubuntu.pool.ntp.org iburst
+server 2.ubuntu.pool.ntp.org iburst
+server 3.ubuntu.pool.ntp.org iburst
+
+restrict -4 default kod notrap nomodify nopeer noquery
+restrict -6 default kod notrap nomodify nopeer noquery
