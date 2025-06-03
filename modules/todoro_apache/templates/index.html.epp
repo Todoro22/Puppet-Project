@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Puppet Web - Todoro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 2rem;
+      color: #333;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.3rem;
+    }
+    .info {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .info p {
+      margin: 0.5rem 0;
+    }
+    .label {
+      font-weight: bold;
+      display: inline-block;
+      width: 130px;
+    }
+  </style>
+</head>
+<body>
+  <h1>TP Puppet - Web Server Summary</h1>
+  <div class="info">
+    <p><span class="label">Uptime :</span> <%= $uptime %></p>
+    <p><span class="label">Current Time :</span> <%= $time %></p>
+    <p><span class="label">Operating System :</span> <%= $os %></p>
+    <p><span class="label">OS Version :</span> <%= $version %></p>
+  </div>
+</body>
+</html>
+
