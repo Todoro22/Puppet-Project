@@ -35,7 +35,7 @@ Puppet-Project/
 | `ntp`       | Dedicated branch for NTP module          |
 | `web`       | Special environment for Apache website   |
 
-### 🏷️ Tag
+###  Tag
 
 - **v1.0**: Final stable release with all three modules functional and validated
 
@@ -43,7 +43,7 @@ Puppet-Project/
 
 ## Modules Overview
 
-### 🔐 `todoro_ssh`
+### `todoro_ssh`
 
 - Configures `sshd_config` via EPP template
 - Uses `facter` to switch port:
@@ -52,13 +52,13 @@ Puppet-Project/
 - Enforces protocol version 2
 - Enables service and applies security best practices
 
-### ⏰ `todoro_ntp`
+###  `todoro_ntp`
 
 - Installs and enables the NTP service
 - Ensures time synchronization is running correctly
 - Compatible with both Ubuntu and CentOS
 
-### 🌐 `todoro_apache`
+###  `todoro_apache`
 
 - Installs Apache and serves on **port 84**
 - Uses a custom template to configure virtual hosts
