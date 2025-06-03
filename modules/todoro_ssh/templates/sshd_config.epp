@@ -1,0 +1,12 @@
+# SSH config made by the goat Todoro
+
+Port <%= $ssh_port %>
+Protocol 2
+PermitRootLogin yes
+PasswordAuthentication yes
+ChallengeResponseAuthentication no
+UsePAM yes
+X11Forwarding yes
+PrintMotd no
+AcceptEnv LANG LC_*
+Subsystem sftp /usr/lib/openssh/sftp-server
