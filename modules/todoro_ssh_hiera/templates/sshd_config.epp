@@ -1,0 +1,7 @@
+# SSH Configuration gérer par Puppet et Hiera 
+
+
+Port <%= $ssh_port %>
+Protocol 2
+PermitRootLogin yes
+PasswordAuthentication yes
